@@ -1,0 +1,57 @@
+<head>
+  <title>Google Homepage</title>
+  <link href="main_css.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul id="nav_bar">
+        <li class="nav-links" id="gmail"><a href="https://www.google.com/gmail/">Gmail</a></li>
+        <li class="nav-links"><a href="https://www.google.com/imghp?hl=en">Images</a></li>
+        <li id="sign_in"><a
+            href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign
+            In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- GOOGLE IMG -->
+  <div class="google">
+    <a href="#" id="google_logo"><img src="home_poster.jpg" alt=" google-doodle-rockmore-game-1588227777.jpg" /></a>
+  </div>
+
+  <!-- FORM SEARCH -->
+  <div class="form">
+    <form>
+      <label for="form-search"></label>
+      <input type="text" id="form-search" placeholder="Search Google or type URL">
+    </form>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="buttons">
+    <input type="submit" value="Google Search" id="google_search" onclick=searchbutton();>
+    <input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky" onclick=window.open();>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <ul class="footer-left">
+      <li><a href="#">Advertising</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <ul class="footer-right">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </footer>
+  <Script charset="utf-8">
+    function searchbutton() {
+      let v = document.getElementById("form-search").value;
+      window.open("https://google.com/search?q=" + v, "_blank");
+    }
+  </Script>
+</body>
